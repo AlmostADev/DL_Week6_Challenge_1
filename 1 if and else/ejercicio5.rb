@@ -1,20 +1,19 @@
 # Utiliza álgebra booleana para hacer un refactoring de este código
 # Para verificar la respuestas, puedes variar los valores de a y b.
 
-a = true
-b = true
+a = false
+b = false
 
 if a == true and b == true
 
   puts 'Lograste A y B!'
 
-  if a =! false and b == true
+elsif a =! false and b == true
 
-    puts 'Lograste A! Pero no B!'
+  puts 'Lograste A! Pero no B!'
 
-  end
-else
+  else
 
-  puts 'No lograste A ni B!'
+    puts 'No lograste A ni B!'
 
 end
