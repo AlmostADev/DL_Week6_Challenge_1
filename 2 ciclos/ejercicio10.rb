@@ -8,5 +8,8 @@ while(ready == 0)
   puts "Opción 3: blah"
   puts "Opción 4: Salir"
   opcion = gets.chomp.to_i
-  ready = 1 if opcion == 4
+  if opcion == 4
+    puts "Saliendo..."
+    ready = 1
+  end
 end
