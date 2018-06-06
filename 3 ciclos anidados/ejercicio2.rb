@@ -24,3 +24,14 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+a = 3
+b = ''
+
+puts '<table>'
+puts '<tbody>'
+a.times do |i|
+  puts b = "<tr><td> #{i + 1} </td></tr>".rjust(22) if a != 0
+end
+puts '</table>'
+puts '</tbody>'

@@ -16,5 +16,5 @@ end
 =end
 
 990.times do |i|
-    puts i + 1 if 990 % i == 0
+    puts i + 1 if 990 % (i + 1) == 0
 end

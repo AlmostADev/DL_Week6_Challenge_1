@@ -7,9 +7,11 @@ while numero != 0
     puts "Bienvenido al Multiplicador de Desafio Latam!"
     puts "Ingresa un numero: "
     numero = gets.chomp
-    10.times do |i|
-        puts numero * i
+    if numero != 0
+        10.times do |i|
+            puts numero * i
+    end
+    else
+        puts "Saliendo..."
     end
 end
-
-puts "Saliendo..."
