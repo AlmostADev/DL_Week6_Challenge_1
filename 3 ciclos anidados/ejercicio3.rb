@@ -3,15 +3,17 @@
 # que se ingrese un 0 (cero).
 # Ingrese un número (0 para salir): _
 
-while numero != 0
-    puts "Bienvenido al Multiplicador de Desafio Latam!"
+puts "Bienvenido al Multiplicador de Desafio Latam!"
+loop do
     puts "Ingresa un numero: "
-    numero = gets.chomp
+    numero = gets.chomp.to_i
     if numero != 0
-        10.times do |i|
-            puts numero * i
-    end
+        (1..10).each do |n|
+        puts "\n" if n ==1
+        print "#{numero} "+"*"+" #{n} = #{numero*n}"+"\n"
+        end
+        print "\n"
     else
-        puts "Saliendo..."
+        break
     end
 end

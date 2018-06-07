@@ -31,7 +31,7 @@ b = ''
 puts '<table>'
 puts '<tbody>'
 a.times do |i|
-  puts b = "<tr><td> #{i + 1} </td></tr>".rjust(22) if a != 0
+  puts b = "<tr><td> #{i + 1} </td></tr>" if a != 0
 end
 puts '</table>'
 puts '</tbody>'
