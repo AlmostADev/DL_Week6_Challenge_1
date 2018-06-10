@@ -26,12 +26,17 @@ Generar el código para imprimir la siguiente tabla:
 =end
 
 a = 3
-b = ''
+b = 4
+i = 0
 
 puts '<table>'
 puts '<tbody>'
-a.times do |i|
-  puts b = "<tr><td> #{i + 1} </td></tr>" if a != 0
-end
+  a.times do
+    puts ' <tr>'
+    b.times do
+      puts "<td> #{i += 1} </td>"
+    end
+    puts ' </tr>'
+  end
 puts '</table>'
 puts '</tbody>'
