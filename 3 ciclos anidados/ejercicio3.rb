@@ -14,6 +14,7 @@ loop do
         end
         print "\n"
     else
+        puts "Program Terminated..."
         break
     end
 end
